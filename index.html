@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Provider Offroad Batu Terbaik - Paket Jeep Wisata Coban Talun & Hutan Pinus</title>
+    <title>Provider Offroad Batu Terbaik - Paket Jeep Wisata Coban Talun</title>
     <meta name="description"
-        content="Jelajahi hutan pinus dan jalur lumpur Kota Batu bersama Provider Offroad Batu. Paket offroad Coban Talun, Bukit Jengkoang, dan fun jeep tour dengan armada 4x4 tangguh.">
+        content="Jelajahi hutan pinus dan jalur lumpur Kota Batu. Paket offroad Coban Talun, Bukit Jengkoang, dan fun jeep tour dengan armada 4x4 tangguh. Booking sekarang!">
     <meta name="keywords"
-        content="offroad batu, jeep wisata batu, sewa jeep coban talun, fun offroad batu, outbound batu malang, paket wisata batu, provider offroad batu">
+        content="offroad batu, jeep wisata batu, sewa jeep coban talun, fun offroad batu, outbound batu malang, provider offroad batu">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Provider Offroad Batu">
     <link rel="canonical" href="https://provideroffroadbatu.vercel.app/">
@@ -18,7 +18,7 @@
     <meta property="og:title" content="Provider Offroad Batu - Spesialis Jalur Hutan Pinus">
     <meta property="og:description"
         content="Pacu adrenalin di jalur dingin Kota Batu. Armada Jeep tangguh & safety terjamin.">
-    <meta property="og:image" content="https://provideroffroadbatu.vercel.app/img/hero.webp">
+    <meta property="og:image" content="https://placehold.co/1200x630/1e3932/d4a373?text=Offroad+Batu+Adventure">
     <meta property="og:url" content="https://provideroffroadbatu.vercel.app/">
 
     <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
@@ -30,6 +30,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
@@ -38,7 +42,7 @@
       "@context": "https://schema.org",
       "@type": "TouristInformationCenter",
       "name": "Provider Offroad Batu",
-      "image": "https://provideroffroadbatu.vercel.app/img/hero.webp",
+      "image": "https://provideroffroadbatu.vercel.app/img/hero.jpg",
       "description": "Penyedia layanan wisata offroad dan jeep wisata di area Kota Batu dan Coban Talun.",
       "address": {
         "@type": "PostalAddress",
@@ -61,24 +65,25 @@
 
     <style>
         /* =========================================
-           THEME: BATU FOREST RUGGED
+           THEME: BATU FOREST (Hijau & Emas)
            ========================================= */
         :root {
+            /* Palette Khusus Batu */
             --primary-color: #1e3932;
             /* Forest Green */
             --primary-dark: #142621;
             /* Darker Green */
             --accent-color: #d4a373;
             /* Earthy Gold */
-            --accent-hover: #cfa06d;
-            /* Darker Gold */
+            --accent-hover: #faedcd;
+            /* Light Cream */
             --light-gray: #f3f4f1;
             /* Paper White */
             --text-dark: #2b2b2b;
 
             --section-padding: 60px 0;
             --border-radius: 0px;
-            /* KOTAK / BOXY STYLE */
+            /* Kotak Tegas (Boxy) */
         }
 
         body {
@@ -88,7 +93,7 @@
             background-color: #fff;
         }
 
-        /* Typography: Oswald untuk Heading */
+        /* Typography: Oswald untuk Heading (Tegas & Tinggi) */
         h1,
         h2,
         h3,
@@ -101,8 +106,7 @@
         .h3,
         .h4,
         .h5,
-        .h6,
-        .btn {
+        .h6 {
             font-family: 'Oswald', sans-serif;
             font-weight: 700;
             text-transform: uppercase;
@@ -130,10 +134,13 @@
             padding: var(--section-padding);
         }
 
-        /* BUTTON STYLE: KOTAK */
+        /* BUTTON STYLE: KOTAK & SOLID */
         .btn {
             border-radius: var(--border-radius);
             padding: 12px 35px;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 1px;
             transition: all 0.3s ease;
             border: 2px solid transparent;
         }
@@ -141,6 +148,7 @@
         .btn-accent {
             background-color: var(--accent-color);
             color: var(--primary-dark);
+            font-weight: 700;
         }
 
         .btn-accent:hover {
@@ -152,6 +160,7 @@
 
         .btn-outline-light {
             border: 2px solid #fff;
+            font-weight: 700;
         }
 
         .btn-outline-light:hover {
@@ -159,16 +168,22 @@
             color: var(--primary-color);
         }
 
-        /* NAVBAR STYLE */
+        /* =========================================
+           NAVBAR STYLE (FOREST RUGGED)
+           ========================================= */
         .navbar {
             padding: 15px 0;
             background-color: var(--primary-color) !important;
+            /* Warna Hijau Hutan */
             box-shadow: 0 4px 0px rgba(0, 0, 0, 0.15);
+            /* Hard Shadow */
         }
 
         .navbar-brand {
+            font-family: 'Oswald', sans-serif;
             font-size: 1.8rem;
             letter-spacing: 2px;
+            font-weight: 700;
         }
 
         .nav-link {
@@ -183,13 +198,29 @@
         .nav-link.active {
             color: var(--accent-color) !important;
             border-bottom: 3px solid var(--accent-color);
+            /* Garis bawah tebal */
+        }
+
+        /* Penyesuaian Mobile */
+        @media (max-width: 768px) {
+            .navbar-collapse {
+                background-color: var(--primary-color);
+                padding: 20px;
+                border-bottom: 4px solid var(--accent-color);
+            }
+
+            .navbar .btn-accent {
+                width: 100%;
+                margin-left: 0 !important;
+                margin-top: 10px;
+            }
         }
 
         /* HERO SECTION */
         .hero-section {
+            /* Background gelap dengan overlay hijau hutan */
             background: linear-gradient(rgba(20, 38, 33, 0.85), rgba(20, 38, 33, 0.6)),
                 url('img/hero.webp');
-            /* Pastikan file ada */
             background-size: cover;
             background-position: center;
             height: 100vh;
@@ -206,7 +237,7 @@
             display: inline-block;
             padding-bottom: 10px;
             margin-bottom: 25px;
-            line-height: 1.1;
+            line-height: 1;
         }
 
         .hero-section .lead {
@@ -220,9 +251,11 @@
             margin-right: auto;
         }
 
-        /* GENERAL STYLES */
+        /* ABOUT: Frame Style */
         #about img {
+            border-radius: var(--border-radius);
             border: 10px solid var(--light-gray);
+            box-shadow: none;
         }
 
         #about h2 {
@@ -231,21 +264,28 @@
             padding-left: 20px;
         }
 
-        #services .card,
-        #products .card {
+        /* SERVICES: Card Border Style */
+        #services .card {
             border: 2px solid #e0e0e0;
-            border-radius: 0;
+            border-radius: var(--border-radius);
+            background: white;
             transition: all 0.3s;
+            box-shadow: none;
         }
 
-        #services .card:hover,
-        #products .card:hover {
+        #services .card:hover {
             border-color: var(--primary-color);
+            background-color: var(--primary-color);
+            color: white;
             transform: translateY(-5px);
         }
 
-        #products .card:hover {
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        #services .card:hover .text-accent {
+            color: var(--accent-color) !important;
+        }
+
+        #services .card:hover .text-muted {
+            color: rgba(255, 255, 255, 0.8) !important;
         }
 
         #services .display-4 {
@@ -253,17 +293,54 @@
             margin-bottom: 20px;
         }
 
-        .gallery-item {
-            position: relative;
+        /* CTA */
+        section.bg-dark {
+            background-color: var(--primary-dark) !important;
+            border-top: 5px solid var(--accent-color);
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        /* PRODUCTS: Boxy Cards */
+        #products .card {
+            border: none;
+            border-radius: var(--border-radius);
             overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s;
+        }
+
+        #products .card:hover {
+            transform: translateY(-5px);
+        }
+
+        #products .card-img-top {
+            height: 240px;
+            object-fit: cover;
+        }
+
+        #products .btn {
+            width: 100%;
+            border-radius: 0;
+        }
+
+        #products .h3 {
+            color: var(--primary-color);
+        }
+
+        /* GALLERY: Grayscale Hover Effect */
+        .gallery-item {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            position: relative;
         }
 
         .gallery-item img {
-            filter: grayscale(100%);
-            transition: all 0.4s ease;
             width: 100%;
             height: 250px;
             object-fit: cover;
+            filter: grayscale(100%);
+            transition: all 0.4s ease;
         }
 
         .gallery-item:hover img {
@@ -271,9 +348,13 @@
             transform: scale(1.1);
         }
 
+        /* TESTIMONIALS */
         #testimonials .lead {
             background: var(--light-gray);
             padding: 40px;
+            border-radius: var(--border-radius);
+            position: relative;
+            margin-bottom: 30px;
             border-left: 5px solid var(--accent-color);
             font-style: italic;
         }
@@ -287,15 +368,40 @@
 
         #faq .accordion-button {
             font-family: 'Oswald', sans-serif;
-            font-weight: 700;
-            font-size: 1.1rem;
             background-color: #fff;
             color: var(--primary-color);
+            font-weight: 700;
+            box-shadow: none;
+            font-size: 1.1rem;
         }
 
         #faq .accordion-button:not(.collapsed) {
             background-color: var(--primary-color);
             color: #fff;
+        }
+
+        /* NEWS */
+        #news .card-title {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.5px;
+        }
+
+        #news a.text-primary-dark {
+            color: var(--primary-color);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        /* CONTACT FORM */
+        #contact .form-control {
+            border-radius: 0;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+
+        #contact .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: none;
         }
 
         /* FOOTER */
@@ -304,34 +410,20 @@
             border-top: 8px solid var(--accent-color);
         }
 
-        footer .no-anim,
-        footer a,
-        footer i {
-            transition: none !important;
+        footer h5,
+        footer h6,
+        footer .h5,
+        footer .h6 {
+            color: var(--accent-color);
         }
 
-        footer a.hover-accent:hover {
+        footer a:hover {
             color: var(--accent-color) !important;
-            text-decoration: underline !important;
+            padding-left: 5px;
+            transition: 0.3s;
         }
 
-        footer .btn:hover {
-            background-color: #fff !important;
-            color: #1e3932 !important;
-            opacity: 1 !important;
-        }
-
-        /* Modal Styles */
-        .modal-content {
-            border-radius: 0px !important;
-            border: 2px solid var(--accent-color);
-        }
-
-        .modal-header {
-            border-bottom: none;
-        }
-
-        /* Floating Button */
+        /* FLOATING BUTTONS */
         .floating-btn-container {
             position: fixed;
             bottom: 30px;
@@ -340,27 +432,38 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
+            align-items: center;
         }
 
-        #scrollTopBtn,
-        .float-wa {
+        #scrollTopBtn {
+            display: none;
+            width: 50px;
+            height: 50px;
             background-color: var(--accent-color);
             color: var(--primary-color);
             border: none;
-            border-radius: 0;
+            border-radius: 0px;
             box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
             font-size: 1.5rem;
-            text-decoration: none;
         }
 
         .float-wa {
+            width: 60px;
+            height: 60px;
             background-color: #25d366;
             color: white;
+            border-radius: 0px;
+            font-size: 30px;
+            text-align: center;
+            box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
             animation: pulse 2s infinite;
         }
 
@@ -378,25 +481,35 @@
             }
         }
 
+        /* MOBILE RESPONSIVE */
+        html {
+            scroll-behavior: smooth;
+        }
+
         @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.8rem;
+                border-bottom-width: 3px;
+            }
+
+            .hero-section {
+                text-align: center;
+                justify-content: center;
+                padding-top: 80px;
+            }
+
             .navbar-collapse {
-                background-color: var(--primary-color);
+                background-color: var(--primary-dark);
                 padding: 20px;
-                border-bottom: 4px solid var(--accent-color);
             }
 
             .navbar .btn-accent {
                 width: 100%;
-                margin-left: 0 !important;
-                margin-top: 10px;
+                margin: 10px 0 0 0 !important;
             }
 
-            .hero-section {
-                padding-top: 80px;
-            }
-
-            .hero-section h1 {
-                font-size: 2.8rem;
+            #services .display-4 {
+                font-size: 2.5rem;
             }
         }
     </style>
@@ -412,12 +525,12 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#products">Paket</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Layanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#products">Paket</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#gallery">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Kontak</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                 </ul>
                 <a href="https://wa.me/6281234567890" class="btn btn-accent ms-lg-3">RESERVASI</a>
@@ -429,7 +542,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <h1 class="display-1">TAKLUKAN <span class="text-accent">JALUR BATU</span></h1>
+                    <h1>TAKLUKAN <span class="text-accent">JALUR BATU</span></h1>
                     <p class="lead">Spesialis offroad hutan pinus & jalur lumpur Coban Talun. Pengalaman adrenalin
                         terbaik dengan armada Jeep tangguh di Kota Batu.</p>
                     <div class="d-flex gap-3 justify-content-center flex-wrap">
@@ -517,6 +630,7 @@
                 <h2 class="fw-bold">PAKET POPULER</h2>
             </div>
             <div class="row g-4 justify-content-center">
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100">
                         <img src="img/p1.webp" class="card-img-top" alt="Short Course" loading="lazy">
@@ -535,9 +649,9 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100 border-2 border-warning">
-                        <div class="bg-accent text-primary-dark text-center fw-bold py-1 small">BEST SELLER</div>
                         <img src="img/p2.webp" class="card-img-top" alt="Long Course" loading="lazy">
                         <div class="card-body text-center d-flex flex-column">
                             <h3 class="h4 card-title">LONG COURSE</h3>
@@ -554,6 +668,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-4 col-md-6">
                     <div class="card h-100">
                         <img src="img/p3.webp" class="card-img-top" alt="Sunrise View" loading="lazy">
@@ -572,6 +687,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -586,16 +702,28 @@
                 </div>
                 <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0"><img src="img/p1.webp"
-                                class="img-fluid w-100 h-100 border border-secondary"
-                                style="object-fit: cover; min-height: 250px;" alt="Short Course"></div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img src="img/p1.webp" class="img-fluid w-100 h-100 border border-secondary"
+                                style="object-fit: cover; min-height: 250px;" alt="Short Course">
+                        </div>
                         <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <p class="lead fs-6">Paket hemat untuk offroad ringan di Hutan Pinus Coban Talun.</p>
+                            <p class="lead fs-6">Paket hemat untuk Anda yang ingin merasakan sensasi offroad ringan
+                                namun tetap seru melintasi Hutan Pinus Coban Talun.</p>
+
                             <hr class="text-secondary my-2">
+
                             <h6 class="fw-bold text-accent mb-2">Fasilitas Lengkap:</h6>
                             <ul class="list-unstyled small text-muted mb-0">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Jeep Hardtop 4x4</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Tiket & Air Mineral</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Jeep Hardtop
+                                    4x4 (Max 4 Org)</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Driver
+                                    Berpengalaman & BBM</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Tiket Masuk
+                                    Perhutani</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Air Mineral
+                                </li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Spot Foto
+                                    Hutan Pinus</li>
                             </ul>
                         </div>
                     </div>
@@ -603,12 +731,13 @@
                 <div class="modal-footer border-top-0 bg-light-gray">
                     <button type="button" class="btn btn-outline-secondary rounded-0"
                         data-bs-dismiss="modal">Tutup</button>
-                    <a href="https://wa.me/6281234567890?text=Booking%20Short%20Course"
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20booking%20Short%20Course"
                         class="btn btn-accent rounded-0">Booking WA</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="modalLong" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0">
@@ -618,16 +747,30 @@
                 </div>
                 <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0"><img src="img/p2.webp"
-                                class="img-fluid w-100 h-100 border border-secondary"
-                                style="object-fit: cover; min-height: 250px;" alt="Long Course"></div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img src="img/p2.webp" class="img-fluid w-100 h-100 border border-secondary"
+                                style="object-fit: cover; min-height: 250px;" alt="Long Course">
+                        </div>
                         <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <p class="lead fs-6">Paket lengkap menembus lumpur dalam dan sungai.</p>
+                            <div class="badge bg-warning text-dark mb-2 w-auto align-self-start rounded-0">BEST SELLER
+                            </div>
+                            <p class="lead fs-6">Paket lengkap menembus lumpur dalam dan sungai. Cocok untuk pencari
+                                adrenalin sejati yang ingin durasi lebih lama.</p>
+
                             <hr class="text-secondary my-2">
+
                             <h6 class="fw-bold text-accent mb-2">Fasilitas Lengkap:</h6>
                             <ul class="list-unstyled small text-muted mb-0">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Rute Ekstrem</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Makan Siang</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Semua
+                                    Fasilitas Short Course</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Rute Ekstrem
+                                    (Lumpur & Sungai)</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Makan Siang
+                                    Prasmanan (Ndeso)</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Dokumentasi
+                                    Foto & Video</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> P3K Standar
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -635,12 +778,13 @@
                 <div class="modal-footer border-top-0 bg-light-gray">
                     <button type="button" class="btn btn-outline-secondary rounded-0"
                         data-bs-dismiss="modal">Tutup</button>
-                    <a href="https://wa.me/6281234567890?text=Booking%20Long%20Course"
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20booking%20Long%20Course"
                         class="btn btn-accent rounded-0">Booking WA</a>
                 </div>
             </div>
         </div>
     </div>
+
     <div class="modal fade" id="modalSunrise" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content rounded-0 border-0">
@@ -651,16 +795,28 @@
                 </div>
                 <div class="modal-body p-4">
                     <div class="row">
-                        <div class="col-md-6 mb-3 mb-md-0"><img src="img/p3.webp"
-                                class="img-fluid w-100 h-100 border border-secondary"
-                                style="object-fit: cover; min-height: 250px;" alt="Sunrise"></div>
+                        <div class="col-md-6 mb-3 mb-md-0">
+                            <img src="img/p3.webp" class="img-fluid w-100 h-100 border border-secondary"
+                                style="object-fit: cover; min-height: 250px;" alt="Sunrise">
+                        </div>
                         <div class="col-md-6 d-flex flex-column justify-content-center">
-                            <p class="lead fs-6">Saksikan matahari terbit dari puncak tertinggi perkebunan sayur.</p>
+                            <p class="lead fs-6">Saksikan matahari terbit dari puncak tertinggi perkebunan sayur
+                                Brakseng dengan pemandangan 360 derajat yang memukau.</p>
+
                             <hr class="text-secondary my-2">
-                            <h6 class="fw-bold text-accent mb-2">Fasilitas:</h6>
+
+                            <h6 class="fw-bold text-accent mb-2">Itinerary & Fasilitas:</h6>
                             <ul class="list-unstyled small text-muted mb-0">
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Jeep Terbuka</li>
-                                <li><i class="bi bi-check-circle-fill text-success me-2"></i> Coffee Break</li>
+                                <li class="mb-1"><i class="bi bi-clock-fill text-accent me-2"></i> 03.00: Jemput di
+                                    Hotel/Meeting Point</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Jeep Terbuka
+                                    (Open Roof)</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Coffee Break
+                                    & Snack di Puncak</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Spot Foto
+                                    Golden Sunrise</li>
+                                <li class="mb-1"><i class="bi bi-check-circle-fill text-success me-2"></i> Trip ke Kebun
+                                    Sayur & Bunga</li>
                             </ul>
                         </div>
                     </div>
@@ -668,7 +824,7 @@
                 <div class="modal-footer border-top-0 bg-light-gray">
                     <button type="button" class="btn btn-outline-secondary rounded-0"
                         data-bs-dismiss="modal">Tutup</button>
-                    <a href="https://wa.me/6281234567890?text=Booking%20Sunrise"
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20mau%20booking%20Sunrise%20Brakseng"
                         class="btn btn-accent rounded-0">Booking WA</a>
                 </div>
             </div>
@@ -720,13 +876,13 @@
                             <div class="carousel-item active">
                                 <p class="lead">"Gila sih tracknya! Beda banget sama offroad tempat lain. Batu Trail
                                     Hunters emang pro banget cari jalur."</p>
-                                <div class="h5 fw-bold text-primary-dark">Rizky Aditya</div>
+                                <div class="h5 fw-bold text-primary">Rizky Aditya</div>
                                 <small class="text-muted">Surabaya Community</small>
                             </div>
                             <div class="carousel-item">
                                 <p class="lead">"Pemandangan hutan pinusnya juara. Driver ramah dan helpful buat
                                     foto-foto. Mantap!"</p>
-                                <div class="h5 fw-bold text-primary-dark">Sarah Wijaya</div>
+                                <div class="h5 fw-bold text-primary">Sarah Wijaya</div>
                                 <small class="text-muted">Family Trip</small>
                             </div>
                         </div>
@@ -768,7 +924,7 @@
 
     <section class="bg-accent text-dark text-center py-5">
         <div class="container">
-            <h2 class="fw-bold mb-3 h3">JANGAN TUNGGU PENUH!</h2>
+            <h3 class="fw-bold mb-3">JANGAN TUNGGU PENUH!</h3>
             <p class="mb-4">Slot weekend selalu cepat habis. Amankan jadwalmu sekarang.</p>
             <a href="https://wa.me/6281234567890"
                 class="btn btn-accent btn-lg bg-primary-dark text-white border-0">BOOKING SEKARANG</a>
@@ -779,38 +935,38 @@
         <div class="container">
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h2 class="fw-bold">ARTIKEL TERBARU</h2>
-                <a href="blog.html" class="text-dark fw-bold text-decoration-none">LIHAT SEMUA &rarr;</a>
+                <a href="#" class="text-dark fw-bold text-decoration-none">LIHAT SEMUA &rarr;</a>
             </div>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="img/art1.webp" class="card-img-top" alt="Blog 1" loading="lazy">
+                        <img src="img/art1.webp" class="card-img-top" alt="Blog 1">
                         <div class="card-body">
                             <small class="text-muted">15 Jan 2026</small>
                             <h3 class="h5 card-title fw-bold mt-2">Jalur Baru: Tembus Hutan Brakseng</h3>
-                            <a href="artikel-1.html" class="text-primary-dark text-decoration-none fw-bold small">BACA
+                            <a href="#" class="text-primary-dark text-decoration-none fw-bold small">BACA
                                 SELENGKAPNYA</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="img/art2.webp" class="card-img-top" alt="Blog 2" loading="lazy">
+                        <img src="img/art2.webp" class="card-img-top" alt="Blog 2">
                         <div class="card-body">
                             <small class="text-muted">10 Jan 2026</small>
                             <h3 class="h5 card-title fw-bold mt-2">Tips Foto Estetik di Jeep Terbuka</h3>
-                            <a href="artikel-2.html" class="text-primary-dark text-decoration-none fw-bold small">BACA
+                            <a href="#" class="text-primary-dark text-decoration-none fw-bold small">BACA
                                 SELENGKAPNYA</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="img/art3.webp" class="card-img-top" alt="Blog 3" loading="lazy">
+                        <img src="img/art3.webp" class="card-img-top" alt="Blog 3">
                         <div class="card-body">
                             <small class="text-muted">02 Jan 2026</small>
                             <h3 class="h5 card-title fw-bold mt-2">Perbedaan Offroad Batu vs Bromo</h3>
-                            <a href="artikel-3.html" class="text-primary-dark text-decoration-none fw-bold small">BACA
+                            <a href="#" class="text-primary-dark text-decoration-none fw-bold small">BACA
                                 SELENGKAPNYA</a>
                         </div>
                     </div>
@@ -922,6 +1078,51 @@
                 &copy; 2026 Provider Offroad Batu. All Rights Reserved.
             </div>
         </div>
+
+        <style>
+            /* MATIKAN SEMUA ANIMASI/TRANSISI */
+            footer .no-anim,
+            footer .no-anim:hover,
+            footer a,
+            footer i {
+                transition: none !important;
+            }
+
+            /* Hover Link Text Instan */
+            footer a.hover-accent:hover {
+                color: #d4a373 !important;
+                padding-left: 5px;
+                /* Tetap ada indent sedikit */
+            }
+
+            /* Hover Sosmed Icon Instan (Hanya Ganti Warna) */
+            footer .sosmed-icon:hover {
+                color: #d4a373 !important;
+            }
+
+            /* Hover Tombol Chat Admin Instan */
+            footer .btn:hover {
+                background-color: #fff !important;
+                color: #1e3932 !important;
+                opacity: 1 !important;
+            }
+
+            /* Modal Styles untuk Tema Batu */
+            .modal-content {
+                border-radius: 0px !important;
+                /* Memastikan kotak */
+                border: 2px solid var(--accent-color);
+                /* Border Emas */
+            }
+
+            .modal-header {
+                border-bottom: none;
+            }
+
+            .bg-primary-dark {
+                background-color: var(--primary-color) !important;
+            }
+        </style>
     </footer>
 
     <div class="floating-btn-container">
@@ -945,6 +1146,5 @@
         }
     </script>
 </body>
-
 
 </html>
